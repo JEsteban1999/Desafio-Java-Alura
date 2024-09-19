@@ -52,7 +52,7 @@ Si eliges convertir 100 dólares a pesos colombianos:
 Ingrese la cantidad de dólares a convertir a pesos colombianos: 100
 
 
-100 dólares equivalen a 400,000 pesos colombianos
+100 dólares equivalen a 421708.51 pesos colombianos
 
 ## Nota
 Este programa utiliza la API de ExchangeRate-API, por lo que es necesario tener una clave API válida para obtener las tasas de cambio actualizadas.
