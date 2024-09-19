@@ -27,25 +27,29 @@ public class Principal {
                         System.out.println("\nIngrese la cantidad de dolares a convertir a pesos colombianos:");
                         double dolares = lectura.nextDouble();
                         Tasa tasaDolar = consulta.buscarTasa("USD");
-                        System.out.println("\n" + dolares + " dolares equivalen a " + dolares * tasaDolar.COP() + " pesos colombianos");
+                        System.out.println("\n" + dolares + " dolares equivalen a " + dolares * tasaDolar.COP()
+                                + " pesos colombianos");
                         break;
                     case 2:
                         System.out.println("\nIngrese la cantidad de dolares a convertir a euros");
                         dolares = lectura.nextDouble();
                         tasaDolar = consulta.buscarTasa("USD");
-                        System.out.println("\n" + dolares + " dolares equivalen a " + dolares * tasaDolar.EUR() + " euros");
+                        System.out.println(
+                                "\n" + dolares + " dolares equivalen a " + dolares * tasaDolar.EUR() + " euros");
                         break;
                     case 3:
                         System.out.println("\nIngrese la cantidad de pesos colombianos a convertir a dolares");
                         double pesos = lectura.nextDouble();
                         Tasa tasaPeso = consulta.buscarTasa("COP");
-                        System.out.println("\n" + pesos + " pesos colombianos equivalen a " + pesos / tasaPeso.COP() + " dolares");
+                        System.out.println(
+                                "\n" + pesos + " pesos colombianos equivalen a " + pesos / tasaPeso.COP() + " dolares");
                         break;
                     case 4:
                         System.out.println("\nIngrese la cantidad de pesos colombianos a convertir a euros");
                         pesos = lectura.nextDouble();
                         tasaPeso = consulta.buscarTasa("COP");
-                        System.out.println("\n" + pesos + " pesos colombianos equivalen a " + pesos / tasaPeso.COP() * tasaPeso.EUR() + " euros");
+                        System.out.println("\n" + pesos + " pesos colombianos equivalen a "
+                                + pesos / tasaPeso.COP() * tasaPeso.EUR() + " euros");
                         break;
                     case 5:
                         System.out.println("\nIngrese la cantidad de euros a convertir a dolares");
@@ -57,7 +61,8 @@ public class Principal {
                         System.out.println("\nIngrese la cantidad de euros a convertir a pesos colombianos");
                         euros = lectura.nextDouble();
                         tasaEuro = consulta.buscarTasa("EUR");
-                        System.out.println("\n" + euros + " euros equivalen a " + euros * tasaEuro.COP() + " pesos colombianos");
+                        System.out.println(
+                                "\n" + euros + " euros equivalen a " + euros * tasaEuro.COP() + " pesos colombianos");
                         break;
                     case 7:
                         System.out.println("\nGracias por usar el conversor de moneda\n");
