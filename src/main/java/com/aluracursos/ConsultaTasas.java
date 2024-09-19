@@ -10,7 +10,8 @@ import com.google.gson.Gson;
 
 public class ConsultaTasas {
     public Tasa buscarTasa(String sigla) {
-        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/4c58f25fb186a945e76305ce/latest/" + sigla);
+        String apiKey = "4c58f25fb186a945e76305ce";
+        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/" + sigla);
         
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(direccion).build();
